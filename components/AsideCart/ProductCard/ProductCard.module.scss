@@ -1,0 +1,52 @@
+@import 'styles/_variables.scss';
+
+.product__card {
+    width: 379px;
+    height: 95px;
+    min-height: 95px;
+    background-color: $background;
+    box-shadow: -2px 2px 10px 0px #0000000D;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $on-background;
+
+    .product__photo {
+        width: 100%;
+        height: 61px;
+        max-height: 61px;
+        position: relative
+    }
+
+    .product__name {
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 400;
+        width: 113px;
+        max-width: 113px;
+        min-width: 113px;
+    }
+
+    .product__qty {
+        margin-top: -6px;
+        margin-left: 18px;
+    }
+    .product__price {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        margin-top: 4px;
+        width: 100%;
+        text-align: end;
+        margin-right: 22px;
+    }
+    .product__remove {
+        position: absolute;
+        top: -9px;
+        right: -9px;
+        z-index: 9;
+    }
+
+}

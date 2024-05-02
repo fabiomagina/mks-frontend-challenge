@@ -1,0 +1,29 @@
+
+
+.close__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 999px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.close__btn__small {
+    width: 18px;
+    height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.close__btn__medium {
+    width: 38px;
+    height: 38px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 15px;
+
+}

@@ -5,6 +5,7 @@ import AsideCart from "@/components/AsideCart";
 import Footer from "@/components/Footer";
 import TopMenu from "@/components/TopMenu";
 import TanstackProvider from "@/providers/TanstackProvider";
+import StoreProvider from "./StoreProvider";
 
 const montSerrat = Montserrat({ subsets: ["latin"] });
 
@@ -21,15 +22,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montSerrat.className}>
-        <TopMenu />
-        <section className="main__container">
-          <TanstackProvider>
+        <StoreProvider>
+          <TopMenu />
+          <section className="main__container">
+            <TanstackProvider>
               {children}
-          </TanstackProvider>
-        </section>
-        <AsideCart />
+            </TanstackProvider>
+            <AsideCart />
+          </section>
+        </StoreProvider>
         <Footer />
       </body>
-    </html>
+    </html >
   );
 }

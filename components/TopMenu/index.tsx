@@ -5,8 +5,8 @@ import styles from './TopMenu.module.scss'
 const TopMenu = () => {
   return (
     <section className={styles.top_menu}>
-      <Logo/>
-      <CartButton/>
+      <Logo />
+      <CartButton />
     </section>
   );
 };
