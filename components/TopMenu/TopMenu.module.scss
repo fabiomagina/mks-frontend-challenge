@@ -1,0 +1,10 @@
+@import 'styles/_variables.scss';
+
+.top_menu {
+    height: 101px;
+    background-color: $primary;
+    color: $on-primary;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+}

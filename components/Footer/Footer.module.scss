@@ -1,0 +1,15 @@
+@import 'styles/_variables.scss';
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 34px;
+    background-color: #EEEEEE;
+    color: $on-background-variant;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+}

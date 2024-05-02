@@ -1,0 +1,21 @@
+.logo {
+    display: flex;
+    position: relative;
+
+    h1 {
+        margin: 0;
+        position: absolute;
+    }
+    .first__name {
+        font-size: 40px;
+        font-weight: 600;
+        left: 0px;
+        top: 28px;
+    }
+    .second__name {
+        font-size: 20px;
+        font-weight: 300;
+        left: 100px;
+        top: 45px;
+    }
+}

@@ -1,0 +1,23 @@
+@import 'styles/_variables.scss';
+
+.cart__button {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 18px;
+    align-items: center;
+    right: 0;
+    width: 95px;
+    height: 45px;
+    margin-top: 29px;
+    border-radius: 8px;
+    border: none;
+    background-color: $background;
+    
+    cursor: pointer;
+
+    .cart__count {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0 0.9rem;
+    }
+}

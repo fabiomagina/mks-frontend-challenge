@@ -1,0 +1,93 @@
+@import 'styles/_variables.scss';
+
+.product__container {
+    width: 218px;
+    height: 285px;
+    background: $background;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+    border-radius: 8px;
+    padding: 14px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .product__photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 138px;
+
+        img {
+            position: relative;
+        }
+    }
+
+    .product__name {
+        line-height: 19px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 4px;
+        margin: 8px 0 6px 0;
+
+        h2 {
+            font-size: 16px;
+            font-weight: 400;
+            height: 40px;
+            color: $on-background;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+
+        .product__price {
+            margin-right: -4px;
+            font-size: 15px;
+            font-weight: 700;
+            min-width: 64px;
+            min-width: fit-content;
+            height: 26px;
+            border-radius: 5px;
+            background-color: $secondary-background;
+            color: $on-secondary-background;
+            padding: 0 6px;
+            display: flex;
+            align-items: center;
+
+            span {
+                width: 100%;
+            }
+        }
+
+    }
+
+    .product__description {
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 300;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .btn__comprar {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: $primary;
+        gap: 8px;
+        height: 31.91px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        left: 0;
+        color: $on-primary;
+        cursor: pointer;
+    }
+}
