@@ -8,7 +8,6 @@ import ProductSkeleton from './ProductSkeleton';
 import getProducts from '@/server/getProducts';
 
 const ProductGrid = () => {
-
   const { data: products, isLoading, isFetched } = useQuery({
     queryKey: ['products'], queryFn: () => getProducts({ page: 1, rows: 10, sortBy: 'id', orderBy: 'DESC' })
   });
@@ -22,7 +21,6 @@ const ProductGrid = () => {
           </li>)}
       </ul>
     </section >
-
 
   if (isFetched)
     return (

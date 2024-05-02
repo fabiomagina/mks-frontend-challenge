@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`add a product to cart, and verifies if cart value is 1 1`] = `
+<span
+  class="cart__count"
+>
+  1
+</span>
+`;
+
+exports[`remove a product and verifies if Cart values equals 0 1`] = `
+<span
+  class="cart__count"
+>
+  0
+</span>
+`;

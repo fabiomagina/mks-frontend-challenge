@@ -13,6 +13,7 @@ const ProductCard = ({ product }: { product: IProduct }) => {
     return (
         <div className={styles.product__card}>
             <div className={styles.product__photo}>
+                { product.photo !== '' && 
                 <Image
                     src={product.photo}
                     alt={product.name}
@@ -20,7 +21,7 @@ const ProductCard = ({ product }: { product: IProduct }) => {
                     objectFit='contain'
                     style={{
                         height: '100%'
-                    }} />
+                    }} />}
             </div>
             <h2 className={styles.product__name}>
                 {product.name}
