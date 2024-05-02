@@ -1,5 +1,6 @@
 "use client"
 
+import { motion } from "framer-motion";
 import { useAppSelector } from '@/lib/hooks';
 import styles from './AsideCart.module.scss';
 import ProductCard from './ProductCard';
@@ -13,7 +14,15 @@ const AsideCart = () => {
 	const dispatch = useDispatch()
 
 	return (
-		<section className={styles.cart__container} style={{display:`${!cartMenu ? 'none' : 'flex'}` }} >
+		<motion.section
+			className={styles.cart__container}
+			style={{
+				position: 'absolute',
+				right: cartMenu ? 0 : '-500px', // Inicialmente, o menu está fora da tela (direita)
+			}}
+			animate={{ right: cartMenu ? 0 : '-500px' }} // Animação para deslizar o menu da direita para a esquerda
+			transition={{ type: "spring", stiffness: 500, damping: 30 }} // Transição suave
+		>
 			<h2 className={styles.cart__title}>Carrinho de compras</h2>
 			<div className={styles.cart__products}>
 				{cartItems.products.map((product, index) => (
@@ -26,7 +35,7 @@ const AsideCart = () => {
 			<div className={styles.close__btn}>
 				<CloseButton size='medium' onClick={() => dispatch(toggleCartMenu())} />
 			</div>
-		</section>
+		</motion.section>
 	);
 };
 
