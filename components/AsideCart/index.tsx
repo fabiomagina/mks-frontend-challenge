@@ -7,6 +7,7 @@ import ProductCard from './ProductCard';
 import CloseButton from './ProductCard/CloseButton';
 import { useDispatch } from 'react-redux';
 import { toggleCartMenu } from '@/lib/reducers/cartMenu';
+import cartTotal from "@/utils/calculateCartTotal";
 
 const AsideCart = () => {
 	const cartMenu = useAppSelector(state => state.cartMenu);
@@ -28,6 +29,10 @@ const AsideCart = () => {
 				{cartItems.products.map((product, index) => (
 					<ProductCard key={index} product={product} />
 				))}
+			</div>
+			<div className={styles.cart__total}>
+				<span>Total:</span>
+				<span>{cartTotal()}</span>
 			</div>
 			<button className={styles.checkout__btn}>
 				Finalizar Compra

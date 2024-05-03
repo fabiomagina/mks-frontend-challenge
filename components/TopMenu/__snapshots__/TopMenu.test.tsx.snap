@@ -15,3 +15,11 @@ exports[`remove a product and verifies if Cart values equals 0 1`] = `
   0
 </span>
 `;
+
+exports[`verifies Logo in TopMenu 1`] = `
+<h1
+  class="first__name"
+>
+  MKS
+</h1>
+`;
